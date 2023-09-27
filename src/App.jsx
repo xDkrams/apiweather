@@ -177,7 +177,7 @@ function App() {
               disabled={city ? false : true}
             >
               {" "}
-              weather search{" "}
+              search weather{" "}
             </Button>
           </Box>
         </Box>
@@ -214,18 +214,29 @@ function App() {
                 />
               )}
             </Box>
+            <Box className="flex justify-center pt-16 pb-8">
+              <Box>
+                {" "}
+                <p className="font-extrabold text-xl px-4">
+                  {weatherInfo?.location}
+                </p>
+              </Box>
 
-            <Box className="flex justify-center pt-32 border-2">
-              {/* <Box className="h-1/6 w-6/12 md:w-96 lg:w-96  "> */}
-              <p className="font-extrabold text-xl my-2">
-                {weatherInfo?.location}
-              </p>
-
-              <p>{weatherInfo?.temperature}</p>
-              <p>{weatherInfo?.feelsLike}</p>
-              <p>{weatherInfo?.humidiy}</p>
-              <p>{weatherInfo?.wind}</p>
-              <p>{weatherInfo?.condition}</p>
+              <Box className=" px-8 mb-16 ">
+                <p>{weatherInfo?.temperature}</p>
+              </Box>
+              <Box className=" px-8 mb-16 ">
+                <p>{weatherInfo?.feelsLike}</p>
+              </Box>
+              <Box className=" px-8 mb-16 ">
+                <p>{weatherInfo?.humidiy}</p>
+              </Box>
+              <Box className=" px-8 mb-16 ">
+                <p>{weatherInfo?.wind}</p>
+              </Box>
+              <Box className=" px-8 mb-16 ">
+                <p>{weatherInfo?.condition}</p>
+              </Box>
             </Box>
           </Box>
         )}
