@@ -1,0 +1,30 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.result-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-move-left-to-right {
+  animation: moveLeftToRight 15s linear infinite;
+}
